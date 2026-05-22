@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Blockly Smart Gate</title>
+
+  <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #blocklyDiv {
+      height: 450px;
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #2563eb;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    pre {
+      margin-top: 20px;
+      background-color: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      color: #38bdf8;
+      font-size: 16px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Blockly Smart Gate Controller</h1>
+
+  <div id="blocklyDiv"></div>
+
+  <xml id="toolbox" style="display:none">
+
+    <block type="open_gate_with_speed"></block>
+
+  </xml>
+
+  <button onclick="generateCode()">
+    Generate JavaScript Code
+  </button>
+
+  <pre id="output">
+Generated code will appear here...
+  </pre>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

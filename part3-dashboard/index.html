@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Gate Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+
+    <h1>Smart Gate Dashboard</h1>
+
+    <div class="status-card">
+      <p class="label">Live Feed Status</p>
+
+      <div class="status-row">
+        <div id="indicator" class="indicator closed"></div>
+
+        <h2 id="statusText">Gate Closed</h2>
+      </div>
+    </div>
+
+    <div class="activity-card">
+      <p class="label">System Activity</p>
+
+      <p id="activityText">
+        Waiting for vehicle detection...
+      </p>
+    </div>
+
+    <button onclick="simulateGate()">
+      Simulate Vehicle Detection
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

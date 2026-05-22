@@ -1,0 +1,18 @@
+//In Codepen Editor JS Settings
+
+//Open:
+
+//Settings → JavaScript → Add External Scripts
+
+//Add this:
+
+//https://unpkg.com/blockly/blockly.min.js
+
+//Save.
+
+// Define custom block
+
+// Output
+
+// servo.write(80);
+
